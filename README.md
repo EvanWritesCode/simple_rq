@@ -22,7 +22,7 @@ sudo apt install ./mongodb-compass-community-beta_1.18.0~beta.3_amd64.deb
 After all dependencies have been installed:  run maestro for development:
 
 ensure redis is running:
-`sudo systemctl status redis`
+`sudo systemctl status redis.service`
 
 run redis worker in new terminal
 activate environment
