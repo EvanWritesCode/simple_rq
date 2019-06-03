@@ -2,9 +2,10 @@
 
 ## WIP Environment setup.  These instructions are for a local running environment (not docker) in ubuntu.   
 Install Redis:   to install and configure redis run redis_install.sh and configure according to instructions including
+
 For dev:
-~line 147 replace supervised no to supervised systemd
-~line 507 uncomment requirepass foobared and change foobared to a secure and long password" 
+* ~line 147 replace supervised no to supervised systemd
+* ~line 507 uncomment requirepass foobared and change foobared to a secure and long password" 
 
 To install mongodb, venv (if necessary), setup virtual env, and install dependencies,  run
 maestro_environment_setup.sh
