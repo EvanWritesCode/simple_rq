@@ -1,6 +1,6 @@
-##Maestro
+## Maestro
 
-#WIP Environment setup.  These instructions are for a local running environment (not docker) in ubuntu.   
+# WIP Environment setup.  These instructions are for a local running environment (not docker) in ubuntu.   
 Install Redis:   to install and configure redis run redis_install.sh and configure according to instructions including
 For dev:
 ~line 147 replace supervised no to supervised systemd
