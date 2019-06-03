@@ -26,15 +26,19 @@ ensure redis is running:
 
 run redis worker in new terminal
 activate environment
-`source .envrc
-python worker.py`
+`source .envrc'
+'python worker.py`
 
 run API in new terminal
 activate environment
-```source .envrc
-python app.py```
+```
+source .envrc
+python app.py
+```
 
 run rq-dashboard in its own terminal
-```source .envrc
-rq-dashboard --redis-password reallylongpasswordgoeshere```
+```
+source .envrc
+rq-dashboard --redis-password reallylongpasswordgoeshere
+```
 
