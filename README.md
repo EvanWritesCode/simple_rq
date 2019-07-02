@@ -20,9 +20,7 @@ recommended dev tools:
 API POST tool such as firefox rested plugin  
 https://addons.mozilla.org/en-US/firefox/addon/rested/?src=recommended
 
-mongodb viewer such as mongodb compass  (Note that the dev env script will install this for you if you let it)
-wget https://downloads.mongodb.com/compass/beta/mongodb-compass-community-beta_1.18.0~beta.3_amd64.deb
-sudo apt install ./mongodb-compass-community-beta_1.18.0~beta.3_amd64.deb
+mongodb viewer such as mongodb compass  (see maestro_dev_environment.sh for install)
 
 
 After all dependencies have been installed:  run maestro for development:
