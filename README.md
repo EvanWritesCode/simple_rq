@@ -2,7 +2,8 @@
 
 ## WIP Environment setup.  These instructions are for a local running environment (not docker) in ubuntu.   
 Install dependencies:   
-Run `sudo bash maestro_dependencies.sh`
+Run 
+`sudo bash maestro_dependencies.sh`
 
 Configure Redis:
 For dev:
