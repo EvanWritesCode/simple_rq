@@ -5,7 +5,8 @@ Install dependencies:
 Run 
 `sudo bash maestro_dependencies.sh`
 
-Configure Redis:
+Configure Redis.  open `/etc/redis/redis.conf` as sudo and modify:
+
 For dev:
 * ~line 147 replace `supervised no` to `supervised systemd`
 * ~line 507 uncomment `requirepass foobared` and change `foobared` to a secure and long password of your choosing" 
