@@ -9,7 +9,7 @@ Configure Redis.  open `/etc/redis/redis.conf` as sudo and modify:
 
 For dev:
 * ~line 147 replace `supervised no` to `supervised systemd`
-* ~line 507 uncomment `requirepass foobared` and change `foobared` to a secure and long password of your choosing" 
+* ~line 507 uncomment `requirepass foobared` and change `foobared` to a secure and long password of your choosing.  The code is configured to use password `reallylongpasswordgoeshere` (TODO:  change to env var) 
 
 For Prod:  WIP
 
