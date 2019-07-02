@@ -41,9 +41,19 @@ source .envrc
 python app.py
 ```
 
+See if API is running by going to http://localhost:5000/heartbeat in a browser
+
+
 run rq-dashboard in new terminal
 ```
 source .envrc
 rq-dashboard --redis-password reallylongpasswordgoeshere
 ```
+
+To go to rq-dashboard,  navigate to http://localhost:9181/
+
+
+Submit a job:  WIP
+
+
 
