@@ -30,6 +30,7 @@ ensure redis is running:
 
 run redis worker in new terminal
 activate environment
+
 `source .envrc`
 
 `python worker.py`
