@@ -36,13 +36,12 @@ activate environment
 `python worker.py`
 
 run API in new terminal
-activate environment
 ```
 source .envrc
 python app.py
 ```
 
-run rq-dashboard in its own terminal
+run rq-dashboard in new terminal
 ```
 source .envrc
 rq-dashboard --redis-password reallylongpasswordgoeshere
