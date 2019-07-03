@@ -46,7 +46,8 @@ def index():
         print("db create id: ");print(result.inserted_id)
         task.taskId = result.inserted_id
         #mongoID = "ObjectId(\'" + str(task.taskId)+ "\')"
-                
+
+        #The Gutenberg link is for testing purposes        
         job = q.enqueue(tasks.testTask, 'https://www.gutenberg.org/files/2600/2600-h/2600-h.htm',task.taskId)
         #jobId is the redis queue id
         jobId = job.get_id()        
@@ -66,9 +67,7 @@ def index():
 
         #TODO delete this
         #Testing egates model training  inline for easier debugging
-        trainer.main(image_dir=imageDir)
-
-
+        #trainer.main(image_dir=imageDir)
         
     return jobId
 
