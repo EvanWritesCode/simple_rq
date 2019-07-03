@@ -6,7 +6,7 @@ mkdir ~/dev/irad/maestro
 cd ~/dev/irad/maestro
 
 #pull down repo
-git clone https://github.com/EvanWritesCode/maestro.git ~/dev/irad/maestro
+#git clone https://github.com/EvanWritesCode/maestro.git ~/dev/irad/maestro
 
 #install virtual env venv (only needed for ubuntu/debian)
 sudo apt install -y python3-venv
