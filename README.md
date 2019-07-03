@@ -5,10 +5,11 @@ Install dependencies:
 Run 
 `sudo bash maestro_dependencies.sh`
 
-Configure Redis:
+Configure Redis.  open `/etc/redis/redis.conf` as sudo and modify:
+
 For dev:
 * ~line 147 replace `supervised no` to `supervised systemd`
-* ~line 507 uncomment `requirepass foobared` and change `foobared` to a secure and long password of your choosing" 
+* ~line 507 uncomment `requirepass foobared` and change `foobared` to a secure and long password of your choosing.  The code is configured to use password `reallylongpasswordgoeshere` (TODO:  change to env var) 
 
 For Prod:  WIP
 
@@ -19,9 +20,7 @@ recommended dev tools:
 API POST tool such as firefox rested plugin  
 https://addons.mozilla.org/en-US/firefox/addon/rested/?src=recommended
 
-mongodb viewer such as mongodb compass  (Note that the dev env script will install this for you if you let it)
-wget https://downloads.mongodb.com/compass/beta/mongodb-compass-community-beta_1.18.0~beta.3_amd64.deb
-sudo apt install ./mongodb-compass-community-beta_1.18.0~beta.3_amd64.deb
+mongodb viewer such as mongodb compass  (see maestro_dev_environment.sh for install)
 
 
 After all dependencies have been installed:  run maestro for development:
@@ -31,19 +30,30 @@ ensure redis is running:
 
 run redis worker in new terminal
 activate environment
+
 `source .envrc`
+
 `python worker.py`
 
 run API in new terminal
-activate environment
 ```
 source .envrc
 python app.py
 ```
 
-run rq-dashboard in its own terminal
+See if API is running by going to http://localhost:5000/heartbeat in a browser
+
+
+run rq-dashboard in new terminal
 ```
 source .envrc
 rq-dashboard --redis-password reallylongpasswordgoeshere
 ```
+
+To go to rq-dashboard,  navigate to http://localhost:9181/
+
+
+Submit a job:  WIP
+
+
 
