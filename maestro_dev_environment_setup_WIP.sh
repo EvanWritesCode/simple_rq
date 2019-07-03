@@ -1,9 +1,9 @@
 #!/bin/bash
 
-mkdir ~/dev
-mkdir ~/dev/irad
-mkdir ~/dev/irad/maestro
-cd ~/dev/irad/maestro
+#mkdir ~/dev
+#mkdir ~/dev/irad
+#mkdir ~/dev/irad/maestro
+#cd ~/dev/irad/maestro-api
 
 #pull down repo
 #git clone https://github.com/EvanWritesCode/maestro.git ~/dev/irad/maestro
