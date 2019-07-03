@@ -70,7 +70,7 @@ name:your name here
 
 description:your description here
 
-Submit several jobs if you want to see them in RQ dashboard (they get processed very fast)
+Submit several jobs if you want to see them in RQ dashboard (they get processed very fast).  For demo purposes,  each job counts the number of words of a large book from the gutenberg project.
 
 Open up MongoDB compass (or connect via terminal)  and look in the maestro collection.   There should be a json document for each job submission with the name and description data you entered,  as well as start and end date, and training model ID.
 
