@@ -54,7 +54,7 @@ def index():
         print("queue job id: " + str(job.get_id())) 
 
         task.taskQueueId=jobId
-        #TODO:  update record in mongodb to reflect rqID
+        #update record in mongodb to reflect rqID
         db.updateTask(task)
 
         #debugging
@@ -63,7 +63,7 @@ def index():
 
 
         # testing egates 
-        job = q.enqueue(tasks.trainModel_scratch)
+        #job = q.enqueue(tasks.trainModel_scratch)
 
         #TODO delete this
         #Testing egates model training  inline for easier debugging
