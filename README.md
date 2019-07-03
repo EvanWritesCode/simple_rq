@@ -55,5 +55,14 @@ To go to rq-dashboard,  navigate to http://localhost:9181/
 
 Submit a job:  WIP
 
+Open Firefox RESTED plugin (or CURL, or other API tool)
+Set it to POST  http://192.168.0.1:5000/
+Headers:  `Content-Type: application/json`
+Request body: type json
+parameters:  see models/training_task.py for all available parameters
+For example
+name:your name here
+description:your description here
+
 
 
