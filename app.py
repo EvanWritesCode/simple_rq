@@ -9,8 +9,6 @@ from models import training_task
 from persistence import persistence
 import datetime
 
-#TODO remove this
-import image_classification.training_models.train as trainer
 
 app = Flask(__name__)
 #app.config.from_object(os.environ['APP_SETTINGS'])
@@ -24,7 +22,6 @@ q = Queue(connection=conn)
 @app.route('/heartbeat', methods=['GET','POST'])
 def heartbeat():    
     return "up and running.. " + str(datetime.datetime.now())
-
 
 @app.route('/', methods=['POST']) #['GET','POST'])
 def index():
@@ -62,12 +59,6 @@ def index():
         print("task object dict: "); print(task.__dict__)
 
 
-        # testing egates 
-        #job = q.enqueue(tasks.trainModel_scratch)
-
-        #TODO delete this
-        #Testing egates model training  inline for easier debugging
-        #trainer.main(image_dir=imageDir)
         
     return jobId
 
@@ -80,11 +71,7 @@ def get_results(job_key):
         return str(job.result), 200
     else:
         return "job result: " + str(job.result) + ".   Not done.  Status: " + str(job.get_status), 202
-
-
-# @app.route("/queue_status/", methods=['GET'])
-# def get_queue_status():
-       
+      
 
 
 if __name__ == '__main__':
