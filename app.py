@@ -44,7 +44,7 @@ def index():
         task.taskId = result.inserted_id
         #mongoID = "ObjectId(\'" + str(task.taskId)+ "\')"
 
-        #The Gutenberg link is for testing purposes        
+        #Submit new task to RQ        
         job = q.enqueue(tasks.testTask, 'https://www.gutenberg.org/files/2600/2600-h/2600-h.htm',task.taskId)
         #jobId is the redis queue id
         jobId = job.get_id()        
