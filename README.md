@@ -1,4 +1,4 @@
-# Maestro
+# Basic RQ demo based on Maestro
 
 ## WIP Environment setup.  These instructions are for a local running environment (not docker) in ubuntu.   
 Install dependencies:   
